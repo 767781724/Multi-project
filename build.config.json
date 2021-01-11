@@ -1,0 +1,26 @@
+{
+  "webpackConfig":{
+    "buildNodeModules": false
+  },
+  "start": "demo1",
+  "builds":[
+    {
+      "name": "demo1",
+      "type": "webpack",
+      "hasNodeModule":true,
+      "build": true
+    },
+    {
+      "name": "demo2",
+      "type": "webpack",
+      "hasNodeModule":false,
+      "build": false
+    },
+    {
+      "name": "demo3",
+      "type": "gulp",
+      "hasNodeModule":false,
+      "build": false
+    }
+  ]
+}
